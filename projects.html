@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Badin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600">DevPortfolio</a>
+            <div class="space-x-6 text-sm md:text-base font-medium">
+                <a href="index.html" class="hover:text-blue-500 transition">About</a>
+                <a href="projects.html" class="text-blue-600 border-b-2 border-blue-600 pb-1">Projects</a>
+                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-16 flex-grow">
+        <div class="max-w-5xl mx-auto px-4">
+            <header class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-gray-600">รวบรวมโปรเจกต์ที่ผมได้พัฒนาเพื่อฝึกฝนทักษะด้าน Programming</p>
+            </header>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden project-card transition">
+                    <img src="images/library-app.png" alt="Library Management System" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Library Management System</h3>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                            เว็บแอปพลิเคชันจัดการห้องสมุดโดยใช้โครงสร้างแบบ MVC เพื่อความเป็นระเบียบของซอร์สโค้ด 
+                            รองรับระบบจัดการข้อมูลหนังสือ สมาชิก และการยืม-คืน
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6 text-[10px] font-bold">
+                            <span class="bg-blue-50 text-blue-500 px-2 py-1 rounded">NODE.JS</span>
+                            <span class="bg-blue-50 text-blue-500 px-2 py-1 rounded">EXPRESS</span>
+                            <span class="bg-blue-50 text-blue-500 px-2 py-1 rounded">SQLITE</span>
+                        </div>
+                        <a href="https://github.com/your-username" target="_blank" class="text-blue-600 hover:text-blue-800 font-bold text-sm inline-flex items-center">
+                            View Source Code 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden project-card transition">
+                    <img src="images/unity-game.png" alt="Educational Word Game" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Educational Word Game</h3>
+                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                            เกม 2D พัฒนาด้วย Unity และ C# สำหรับเด็กประถม เพื่อฝึกทักษะภาษาไทยผ่านเกมเพลย์ 
+                            เน้นการจัดการตรรกะในเกม (Game Logic) ที่ซับซ้อน
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6 text-[10px] font-bold">
+                            <span class="bg-green-50 text-green-500 px-2 py-1 rounded">UNITY 2D</span>
+                            <span class="bg-green-50 text-green-500 px-2 py-1 rounded">C# SCRIPTING</span>
+                        </div>
+                        <a href="https://github.com/your-username" target="_blank" class="text-blue-600 hover:text-blue-800 font-bold text-sm inline-flex items-center">
+                            View Source Code 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 bg-white border-t mt-auto">
+        <div class="text-center">
+            <p class="text-gray-500 text-sm">© 2026 Badin | Built with Passion</p>
+        </div>
+    </footer>
+
+</body>
+</html>
