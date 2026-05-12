@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities & Achievements | Badin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600">DevPortfolio</a>
+            <div class="space-x-6 text-sm md:text-base font-medium">
+                <a href="index.html" class="hover:text-blue-500 transition">About</a>
+                <a href="projects.html" class="hover:text-blue-500 transition">Projects</a>
+                <a href="activities.html" class="text-blue-600 border-b-2 border-blue-600 pb-1">Activities</a>
+                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-16 flex-grow">
+        <div class="max-w-5xl mx-auto px-4">
+            <header class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Activities & Certificates</h2>
+                <p class="text-gray-600">รวบรวมกิจกรรม ผลงานในห้องเรียน และเกียรติบัตรต่างๆ</p>
+            </header>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <img src="images/certificate-1.png" alt="Certificate" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider">Certificate</span>
+                        <h3 class="text-lg font-bold mt-2">ชื่อเกียรติบัตร/ค่ายที่เข้าร่วม</h3>
+                        <p class="text-gray-500 text-sm mt-2">รายละเอียดสั้นๆ ว่ากิจกรรมนี้ได้เรียนรู้อะไรบ้าง</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <img src="images/class-activity.png" alt="Class Activity" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-green-600 text-xs font-bold uppercase tracking-wider">Class Project</span>
+                        <h3 class="text-lg font-bold mt-2">งานนำเสนอวิชา Network Engineering</h3>
+                        <p class="text-gray-500 text-sm mt-2">อธิบายงานชิ้นเล็กๆ ที่ทำในห้องเรียนเพื่อให้เห็นความตั้งใจ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 bg-white border-t mt-auto">
+        <div class="text-center">
+            <p class="text-gray-500 text-sm">© 2026 Badin | Built with Passion</p>
+        </div>
+    </footer>
+</body>
+</html>
