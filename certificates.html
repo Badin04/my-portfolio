@@ -1,16 +1,50 @@
-<main class="py-16">
-    <div class="max-w-5xl mx-auto px-4">
-        <div class="mb-8">
-            <a href="activities.html" class="text-blue-600 text-sm font-medium hover:underline">← Back to Activities</a>
-            <h2 class="text-3xl font-bold mt-4">Certificates & Bootcamps</h2>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Badin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-4 rounded-lg border">
-                <img src="images/cert1.png" class="rounded mb-3">
-                <h4 class="font-bold">Unity 2D Game Development</h4>
-                <p class="text-xs text-gray-400">Issued by: Coursera / Udemy</p>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600 uppercase tracking-tighter">Badin R.</a>
+            <div class="space-x-6 text-sm md:text-base font-medium">
+                <a href="index.html" class="hover:text-blue-500 transition">About</a>
+                <a href="projects.html" class="hover:text-blue-500 transition">Projects</a>
+                <a href="activities.html" class="text-blue-600">Activities</a>
+                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
             </div>
+        </div>
+    </nav>
+
+    <main class="py-16 flex-grow">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="mb-12">
+                <a href="activities.html" class="text-blue-600 text-sm font-bold flex items-center gap-1 hover:underline">
+                    <span>←</span> Back to Activities
+                </a>
+                <h2 class="text-3xl font-bold mt-4">Certificates & Bootcamps</h2>
+                <div class="h-1 w-20 bg-blue-600 mt-2"></div>
             </div>
-    </div>
-</main>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-2 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <img src="images/cert1.png" alt="Unity Cert" class="rounded-xl w-full h-auto mb-4 border border-gray-50">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-900 leading-snug">Unity 2D Game Development</h4>
+                        <p class="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Issued by: Coursera / Udemy</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </main>
+
+    <footer class="py-10 bg-white border-t mt-auto text-center">
+        <p class="text-gray-400 text-sm">© 2026 Badin | Computer Engineering Student</p>
+    </footer>
+</body>
+</html>
