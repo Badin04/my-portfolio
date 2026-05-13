@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Works | Badin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600 uppercase tracking-tighter">Badin R.</a>
+            <div class="space-x-6 text-sm md:text-base font-medium">
+                <a href="index.html" class="hover:text-blue-500 transition">About</a>
+                <a href="projects.html" class="hover:text-blue-500 transition">Projects</a>
+                <a href="activities.html" class="text-blue-600">Activities</a>
+                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-16 flex-grow">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="mb-12">
+                <a href="activities.html" class="text-blue-600 text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                    <span>←</span> Back to Activities
+                </a>
+                <h2 class="text-4xl font-extrabold mt-6 tracking-tight text-gray-900">Academic & Class Projects</h2>
+                <p class="text-gray-500 mt-3 text-lg">รวบรวมผลงานวิจัยและการออกแบบระบบในรายวิชาต่างๆ</p>
+                <div class="h-1 w-24 bg-blue-600 mt-4 rounded-full"></div>
+            </div>
+
+            <div class="space-y-12">
+                
+                <section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-shadow duration-300">
+                    <div class="md:w-2/5 bg-gray-100 overflow-hidden">
+                        <img src="images/network-lab.png" alt="Network Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 md:w-3/5">
+                        <span class="bg-blue-50 text-blue-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest">Network Engineering</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition">Network Topology & OSPF Study</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            ออกแบบโครงสร้างเครือข่ายจำลองผ่าน Cisco Packet Tracer เพื่อศึกษาพฤติกรรมของ Link State Routing และการประยุกต์ใช้ Dijkstra’s algorithm ในการหาเส้นทางข้อมูล
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-6">
+                            <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase">Packet Tracer</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase">OSPF</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-shadow duration-300">
+                    <div class="md:w-2/5 bg-gray-100 overflow-hidden">
+                        <img src="images/riscv-study.png" alt="Hardware Study" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 md:w-3/5">
+                        <span class="bg-purple-50 text-purple-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest">Architecture</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-purple-600 transition">RISC-V & SiFive Core Analysis</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            วิเคราะห์สถาปัตยกรรม SiFive P870-D และการทำงานของชุดคำสั่ง RISC-V เพื่อทำความเข้าใจการประมวลผลแบบ Vector ในระบบ AI Accelerators
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-6">
+                            <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase">RISC-V</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase">SiFive</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 bg-white border-t mt-auto text-center">
+        <p class="text-gray-400 text-sm font-medium tracking-wide">© 2026 BADIN RUNGRUEANGKITKUL</p>
+    </footer>
+
+</body>
+</html>
