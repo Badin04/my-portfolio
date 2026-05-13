@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Projects | Badin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600">BADIN RUNGRUEANGKITKUL</a>
+            <div class="space-x-6 text-sm md:text-base font-medium">
+                <a href="index.html" class="hover:text-blue-500 transition">About</a>
+                <a href="projects.html" class="hover:text-blue-500 transition">Projects</a>
+                <a href="activities.html" class="hover:text-blue-500 transition">Activities</a>
+                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-12 flex-grow">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="mb-12">
+                <a href="activities.html" class="text-blue-600 text-sm font-medium hover:underline flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Back to Activities
+                </a>
+                <h2 class="text-3xl font-bold mt-4">Class Projects & Academic Works</h2>
+                <p class="text-gray-600 mt-2">รวบรวมโปรเจกต์และงานที่ได้รับมอบหมายในรายวิชาต่างๆ</p>
+            </div>
+
+            <div class="grid gap-12">
+                
+                <section class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-gray-200">
+                        <img src="images/network-lab.png" alt="Network Lab" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Network Engineering</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-3">Network Topology Design & OSPF Configuration</h3>
+                        <p class="text-gray-600 mb-6">
+                            ออกแบบและจำลองเครือข่ายโดยใช้ Cisco Packet Tracer ศึกษาการทำงานของ Link State Routing และการประยุกต์ใช้ Dijkstra’s algorithm ในการหาเส้นทางที่สั้นที่สุดภายใน LAN
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">Packet Tracer</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">OSPF</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">LSA Flooding</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-gray-200">
+                        <img src="images/riscv-study.png" alt="Hardware Architecture" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <span class="bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Computer Architecture</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-3">RISC-V Instruction Set & SiFive Architecture Study</h3>
+                        <p class="text-gray-600 mb-6">
+                            ศึกษาโครงสร้างสถาปัตยกรรมคอมพิวเตอร์แบบเปิด (Open-Standard) โดยเน้นไปที่ SiFive P870-D Performance Cores และการทำงานของ AI Vector Processing Accelerators
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">RISC-V</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">SiFive</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">P870-D</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-gray-200">
+                        <img src="images/library-app-mvc.png" alt="Library App" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Full-stack Dev</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-3">Library Management System (MVC Architecture)</h3>
+                        <p class="text-gray-600 mb-6">
+                            พัฒนาระบบจัดการห้องสมุดโดยใช้ Node.js และ Express โดยออกแบบโครงสร้างโปรเจกต์ตามหลัก MVC เพื่อแยกส่วนการทำงานของ Model, View และ Controller ให้ชัดเจนและง่ายต่อการบำรุงรักษา
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">Node.js</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">Express</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded text-xs font-medium text-gray-500">MVC</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 bg-white border-t mt-auto">
+        <div class="text-center">
+            <p class="text-gray-500 text-sm">© 2026 Badin | Built with Passion</p>
+        </div>
+    </footer>
+
+</body>
+</html>
