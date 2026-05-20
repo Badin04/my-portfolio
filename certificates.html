@@ -7,84 +7,153 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<body class="bg-[#f8fafc] text-slate-800 font-sans flex flex-col min-h-screen">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-blue-600 uppercase tracking-tighter">Badin R.</a>
-            <div class="space-x-6 text-sm md:text-base font-medium">
-                <a href="index.html" class="hover:text-blue-500 transition">About</a>
-                <a href="projects.html" class="hover:text-blue-500 transition">Projects</a>
-                <a href="activities.html" class="text-blue-600">Activities</a>
-                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-black text-slate-900 tracking-tighter uppercase">Badin <span class="text-blue-600">.R</span></a>
+            <div class="space-x-1 md:space-x-2 text-sm font-semibold">
+                <a href="index.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full transition">About</a>
+                <a href="projects.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full transition">Projects</a>
+                <a href="activities.html" class="bg-blue-50 text-blue-600 px-3 py-2 rounded-full transition">Activities</a>
+                <a href="contact.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full transition">Contact</a>
             </div>
         </div>
     </nav>
 
     <main class="py-16 flex-grow">
-        <div class="max-w-5xl mx-auto px-4">
+        <div class="max-w-5xl mx-auto px-6">
             <div class="mb-12">
-                <a href="activities.html" class="text-blue-600 text-sm font-bold flex items-center gap-1 hover:underline">
-                    <span>←</span> Back to Activities
+                <a href="activities.html" class="text-blue-600 text-sm font-bold flex items-center gap-1 hover:underline group w-fit">
+                    <span class="inline-block transition-transform group-hover:-translate-x-1">←</span> Back to Activities
                 </a>
-                <h2 class="text-3xl font-bold mt-4">Certificates & Bootcamps</h2>
-                <div class="h-1 w-20 bg-blue-600 mt-2"></div>
+                <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mt-4">Certificates & Bootcamps</h2>
+                <div class="h-1.5 w-20 bg-blue-600 mt-3 rounded-full"></div>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-2 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <img src="images/5.png" alt="Unity Cert" class="rounded-xl w-full h-auto mb-4 border border-gray-50">
+                
+                <div onclick="openModal('images/5.png', 'การอบรมหลักสูตร การประยุกต์ใช้ ChatGPT เพื่อการศึกษาในยุคดิจิทัล')" class="group bg-white p-3 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-blue-500 transition duration-300 cursor-pointer">
+                    <div class="overflow-hidden rounded-xl bg-slate-50 border border-slate-100">
+                        <img src="images/5.png" alt="ChatGPT Cert" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
+                    </div>
                     <div class="p-4">
-                        <h4 class="font-bold text-gray-900 leading-snug">การอบรมหลักสูตร "การประยุกใช้ Char GPT เพื่อการศึกษาในยุคดิจิทัล"</h4>
-                        <p class="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Issued by: - </p>
+                        <span class="text-[10px] bg-blue-50 text-blue-600 font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">AI & Education</span>
+                        <h4 class="font-bold text-slate-900 leading-snug mt-2 group-hover:text-blue-600 transition">การอบรมหลักสูตร "การประยุกต์ใช้ ChatGPT เพื่อการศึกษาในยุคดิจิทัล"</h4>
+                        <p class="text-xs text-slate-400 mt-2 font-medium">Issued by: - </p>
                     </div>
                 </div>
-                    <div class="bg-white p-2 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <img src="images/loT.png" alt="Unity Cert" class="rounded-xl w-full h-auto mb-4 border border-gray-50">
-                    <div class="p-4">
-                        <h4 class="font-bold text-gray-900 leading-snug">หลักสูตรการออกแบบและประยุกต์ใช้ loT ในโรงงานอุตสาหกรรม ภายใต้โครงการเรียนรู้ตลอดชีวิตและพัฒนาทักษะเพื่ออนาคต(Upskill/Rrskill)</h4>
-                        <p class="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Issued by: -</p>
+                
+                <div onclick="openModal('images/loT.png', 'หลักสูตรการออกแบบและประยุกต์ใช้ IoT ในโรงงานอุตสาหกรรม')" class="group bg-white p-3 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-blue-500 transition duration-300 cursor-pointer">
+                    <div class="overflow-hidden rounded-xl bg-slate-50 border border-slate-100">
+                        <img src="images/loT.png" alt="IoT Cert" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
                     </div>
-                </div>
-
-                <div class="bg-white p-2 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <img src="images/4.png" alt="Unity Cert" class="rounded-xl w-full h-auto mb-4 border border-gray-50">
                     <div class="p-4">
-                        <h4 class="font-bold text-gray-900 leading-snug">The course "HPE Aruba Wireless Network Security - Design & Implementation"</h4>
-                        <p class="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Issued by: - </p>
-                    </div>
-                </div>
-
-
-                <div class="bg-white p-2 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <img src="images/1.png" alt="Unity Cert" class="rounded-xl w-full h-auto mb-4 border border-gray-50">
-                    <div class="p-4">
-                        <h4 class="font-bold text-gray-900 leading-snug">มีผลการเรียนระดับดีมาก ประจำปีการศึกษา2566</h4>
-                        <p class="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Issued by: - </p>
+                        <span class="text-[10px] bg-emerald-50 text-emerald-600 font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Smart Industry</span>
+                        <h4 class="font-bold text-slate-900 leading-snug mt-2 group-hover:text-blue-600 transition">หลักสูตรการออกแบบและประยุกต์ใช้ IoT ในโรงงานอุตสาหกรรม ภายใต้โครงการเรียนรู้ตลอดชีวิต (Upskill/Reskill)</h4>
+                        <p class="text-xs text-slate-400 mt-2 font-medium">Issued by: -</p>
                     </div>
                 </div>
 
-                <div class="bg-white p-2 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <img src="images/2.png" alt="Unity Cert" class="rounded-xl w-full h-auto mb-4 border border-gray-50">
+                <div onclick="openModal('images/4.png', 'HPE Aruba Wireless Network Security')" class="group bg-white p-3 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-blue-500 transition duration-300 cursor-pointer">
+                    <div class="overflow-hidden rounded-xl bg-slate-50 border border-slate-100">
+                        <img src="images/4.png" alt="Aruba Cert" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
+                    </div>
                     <div class="p-4">
-                        <h4 class="font-bold text-gray-900 leading-snug">มีผลการเรียนระดับดีเด่น ประจำปีการศีกษา2567</h4>
-                        <p class="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Issued by: - </p>
+                        <span class="text-[10px] bg-indigo-50 text-indigo-600 font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Cybersecurity</span>
+                        <h4 class="font-bold text-slate-900 leading-snug mt-2 group-hover:text-blue-600 transition">The course "HPE Aruba Wireless Network Security - Design & Implementation"</h4>
+                        <p class="text-xs text-slate-400 mt-2 font-medium">Issued by: - </p>
                     </div>
                 </div>
 
-                <div class="bg-white p-2 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <img src="images/3.png" alt="Unity Cert" class="rounded-xl w-full h-auto mb-4 border border-gray-50">
+                <div onclick="openModal('images/1.png', 'ผลการเรียนระดับดีมาก ประจำปีการศึกษา 2566')" class="group bg-white p-3 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-blue-500 transition duration-300 pointer cursor-pointer">
+                    <div class="overflow-hidden rounded-xl bg-slate-50 border border-slate-100">
+                        <img src="images/1.png" alt="Academic Cert 2566" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
+                    </div>
                     <div class="p-4">
-                        <h4 class="font-bold text-gray-900 leading-snug">มีพัฒนาการเรียนผลการเรียนยอดเยี่ยม ประจำปีการศีกษา2567</h4>
-                        <p class="text-xs text-gray-400 mt-1 uppercase tracking-tighter">Issued by: - </p>
+                        <span class="text-[10px] bg-amber-50 text-amber-600 font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Academic Excellence</span>
+                        <h4 class="font-bold text-slate-900 leading-snug mt-2 group-hover:text-blue-600 transition">มีผลการเรียนระดับดีมาก ประจำปีการศึกษา 2566</h4>
+                        <p class="text-xs text-slate-400 mt-2 font-medium">Issued by: - </p>
                     </div>
                 </div>
+
+                <div onclick="openModal('images/2.png', 'ผลการเรียนระดับดีเด่น ประจำปีการศึกษา 2567')" class="group bg-white p-3 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-blue-500 transition duration-300 cursor-pointer">
+                    <div class="overflow-hidden rounded-xl bg-slate-50 border border-slate-100">
+                        <img src="images/2.png" alt="Academic Cert 2567" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[10px] bg-amber-50 text-amber-600 font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Academic Excellence</span>
+                        <h4 class="font-bold text-slate-900 leading-snug mt-2 group-hover:text-blue-600 transition">มีผลการเรียนระดับดีเด่น ประจำปีการศึกษา 2567</h4>
+                        <p class="text-xs text-slate-400 mt-2 font-medium">Issued by: - </p>
+                    </div>
                 </div>
+
+                <div onclick="openModal('images/3.png', 'พัฒนาการเรียนผลการเรียนยอดเยี่ยม ประจำปีการศึกษา 2567')" class="group bg-white p-3 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-blue-500 transition duration-300 cursor-pointer">
+                    <div class="overflow-hidden rounded-xl bg-slate-50 border border-slate-100">
+                        <img src="images/3.png" alt="Academic Improvement" class="w-full h-auto object-cover group-hover:scale-102 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[10px] bg-purple-50 text-purple-600 font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Outstanding Progress</span>
+                        <h4 class="font-bold text-slate-900 leading-snug mt-2 group-hover:text-blue-600 transition">มีพัฒนาการเรียนผลการเรียนยอดเยี่ยม ประจำปีการศึกษา 2567</h4>
+                        <p class="text-xs text-slate-400 mt-2 font-medium">Issued by: - </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 
-    <footer class="py-10 bg-white border-t mt-auto text-center">
-        <p class="text-gray-400 text-sm">© 2026 Badin | Computer Engineering Student</p>
+    <div id="certModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative max-w-4xl w-full bg-white rounded-3xl p-3 md:p-4 shadow-2xl scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 md:top-4 md:right-4 bg-white/10 text-white md:bg-slate-100 md:text-slate-700 hover:bg-red-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg shadow transition-colors">
+                ✕
+            </button>
+            <div class="overflow-hidden rounded-2xl border border-slate-100 max-h-[75vh] flex items-center justify-center">
+                <img id="modalImage" src="" alt="Certificate Large" class="w-full h-full object-contain">
+            </div>
+            <p id="modalTitle" class="text-slate-800 font-bold text-center mt-4 px-4 text-sm md:text-base"></p>
+        </div>
+    </div>
+
+    <footer class="py-10 bg-white border-t border-slate-100 mt-auto text-center">
+        <p class="text-slate-400 text-sm font-medium">© 2026 Badin | Computer Engineering Student</p>
     </footer>
+
+    <script>
+        function openModal(imageSrc, titleText) {
+            const modal = document.getElementById('certModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            
+            modalImg.src = imageSrc;
+            modalTitle.textContent = titleText;
+            
+            // แสดงบล็อกก่อน จากนั้นค่อยจางใส่นิเมชันเปิดเข้ามา
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('div').classList.remove('scale-95');
+                modal.querySelector('div').classList.add('scale-100');
+            }, 10);
+            
+            // ล็อกหน้าหลักไม่ให้เลื่อนสกรอลล์ขณะเปิดดูรูป
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('certModal');
+            
+            modal.classList.add('opacity-0');
+            modal.querySelector('div').classList.remove('scale-100');
+            modal.querySelector('div').classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }, 300); // รอให้นิเมชัน Fade-out ทำงานเสร็จก่อน
+        }
+    </script>
 </body>
 </html>

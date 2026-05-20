@@ -7,65 +7,84 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<body class="bg-[#f8fafc] text-slate-800 font-sans h-screen flex flex-col overflow-hidden tech-grid">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-blue-600">BADIN RUNGRUEANGKITKUL</a>
-            <div class="space-x-6 text-sm md:text-base font-medium">
-                <a href="index.html" class="hover:text-blue-500 transition">About</a>
-                <a href="projects.html" class="text-blue-600 border-b-2 border-blue-600 pb-1">Projects</a>
-                <a href="activities.html" class="hover:text-blue-500 transition">Activities</a>
-                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100 flex-none">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-black text-slate-900 tracking-tighter uppercase">Badin <span class="text-blue-600">.R</span></a>
+            <div class="space-x-1 md:space-x-2 text-sm font-semibold">
+                <a href="index.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full premium-transition">About</a>
+                <a href="projects.html" class="bg-slate-900 text-white px-4 py-2 rounded-full premium-transition">Projects</a>
+                <a href="activities.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full premium-transition">Activities</a>
+                <a href="contact.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full premium-transition">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main class="py-16 flex-grow">
-        <div class="max-w-5xl mx-auto px-4">
-            <header class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
-                <p class="text-gray-600">รวบรวมโปรเจกต์ที่ผมได้พัฒนาเพื่อฝึกฝนทักษะด้าน Programming</p>
+    <main class="flex-grow flex items-center py-6">
+        <div class="max-w-5xl mx-auto px-6 w-full">
+            <header class="text-center mb-10 space-y-2">
+                <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">Featured <span class="text-blue-600">Projects</span></h2>
+                <p class="text-slate-500 text-sm max-w-xl mx-auto">รวบรวมโปรเจกต์ที่ผมได้พัฒนาเพื่อฝึกฝนทักษะและการแก้ไขปัญหาผ่านการเขียนโปรแกรม</p>
+                <div class="h-1.5 w-16 bg-blue-600 mx-auto rounded-full mt-2"></div>
             </header>
             
-            <div class="grid md:grid-cols-2 gap-10">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
                 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden project-card transition">
-                    <img src="images/library-app.png" alt="Library Management System" class="w-full h-56 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-xl font-bold mb-3 text-gray-900">Library Management System</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-                            เว็บแอปพลิเคชันจัดการห้องสมุดโดยใช้โครงสร้างแบบ MVC เพื่อความเป็นระเบียบของซอร์สโค้ด 
-                            รองรับระบบจัดการข้อมูลหนังสือ สมาชิก และการยืม-คืน
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6 text-[10px] font-bold">
-                            <span class="bg-blue-50 text-blue-500 px-2 py-1 rounded">NODE.JS</span>
-                            <span class="bg-blue-50 text-blue-500 px-2 py-1 rounded">EXPRESS</span>
-                            <span class="bg-blue-50 text-blue-500 px-2 py-1 rounded">SQLITE</span>
+                <div class="bg-white rounded-[2rem] border border-slate-100 shadow-sm overflow-hidden premium-transition hover:shadow-2xl hover:shadow-blue-500/10 group flex flex-col">
+                    <div class="h-44 md:h-48 lg:h-52 bg-slate-100 overflow-hidden relative">
+                        <img src="images/library-app.png" alt="Library System" class="w-full h-full object-cover group-hover:scale-105 premium-transition">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-slate-900 shadow-sm">WEB APP</div>
+                    </div>
+                    <div class="p-6 lg:p-8 flex-grow flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h3 class="text-xl lg:text-2xl font-bold text-slate-900 group-hover:text-blue-600 premium-transition">Library Management System</h3>
+                            <p class="text-slate-500 text-xs lg:text-sm leading-relaxed">
+                                ระบบจัดการห้องสมุดที่ใช้สถาปัตยกรรม MVC เพื่อความยืดหยุ่นในการขยายระบบ รองรับการจัดการสมาชิกและข้อมูลหนังสืออย่างเป็นระบบ
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-1">
+                                <span class="bg-slate-50 border border-slate-100 text-slate-600 px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase">Node.js</span>
+                                <span class="bg-slate-50 border border-slate-100 text-slate-600 px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase">Express</span>
+                                <span class="bg-slate-50 border border-slate-100 text-slate-600 px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase">SQLite</span>
+                            </div>
                         </div>
-                        <a href="https://github.com/badin04/library-App" target="_blank" class="text-blue-600 hover:text-blue-800 font-bold text-sm inline-flex items-center">
-                            View Source Code 
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                        </a>
+                        
+                        <div class="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
+                            <a href="https://github.com/badin04/library-App" target="_blank" class="text-slate-600 hover:text-blue-600 font-bold text-xs lg:text-sm inline-flex items-center group/link premium-transition">
+                                <span>Source Code</span>
+                                <svg class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 premium-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                            
+                            <a href="https://your-demo-link-here.com" target="_blank" class="bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white px-4 py-1.5 rounded-xl font-bold text-xs lg:text-sm inline-flex items-center group/demo premium-transition">
+                                Live Demo 
+                                <svg class="w-3.5 h-3.5 ml-1.5 group-hover/demo:translate-x-0.5 premium-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden project-card transition">
-                    <img src="images/unity-game.png" alt="Educational Word Game" class="w-full h-56 object-cover">
-                    <div class="p-8">
-                        <h3 class="text-xl font-bold mb-3 text-gray-900">Educational Word Game</h3>
-                        <p class="text-gray-600 mb-6 text-sm leading-relaxed">
-                            เกม 2D พัฒนาด้วย Unity และ C# สำหรับเด็กประถม เพื่อฝึกทักษะภาษาไทยผ่านเกมเพลย์ 
-                            เน้นการจัดการตรรกะในเกม (Game Logic) ที่ซับซ้อน
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6 text-[10px] font-bold">
-                            <span class="bg-green-50 text-green-500 px-2 py-1 rounded">UNITY 2D</span>
-                            <span class="bg-green-50 text-green-500 px-2 py-1 rounded">C# SCRIPTING</span>
+                <div class="bg-white rounded-[2rem] border border-slate-100 shadow-sm overflow-hidden premium-transition hover:shadow-2xl hover:shadow-green-500/10 group flex flex-col">
+                    <div class="h-44 md:h-48 lg:h-52 bg-slate-100 overflow-hidden relative">
+                        <img src="images/unity-game.png" alt="Educational Game" class="w-full h-full object-cover group-hover:scale-105 premium-transition">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold text-slate-900 shadow-sm">GAME DEV</div>
+                    </div>
+                    <div class="p-6 lg:p-8 flex-grow flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <h3 class="text-xl lg:text-2xl font-bold text-slate-900 group-hover:text-green-600 premium-transition">Educational Word Game</h3>
+                            <p class="text-slate-500 text-xs lg:text-sm leading-relaxed">
+                                เกมการศึกษาแบบ 2D สำหรับเด็กประถม พัฒนาด้วย Unity เพื่อเสริมสร้างทักษะภาษาไทยผ่านความสนุกสนานและ Game Logic ที่เข้าใจง่าย
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-1">
+                                <span class="bg-slate-50 border border-slate-100 text-slate-600 px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase">Unity 2D</span>
+                                <span class="bg-slate-50 border border-slate-100 text-slate-600 px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase">C# Scripting</span>
+                            </div>
                         </div>
-                        <a href="https://github.com/Badin04/Thai-FruitNinja-Learning.git" target="_blank" class="text-blue-600 hover:text-blue-800 font-bold text-sm inline-flex items-center">
-                            View Source Code 
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                        </a>
+                        <div class="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between">
+                            <a href="https://github.com/Badin04/Thai-FruitNinja-Learning.git" target="_blank" class="text-slate-600 hover:text-green-600 font-bold text-xs lg:text-sm inline-flex items-center group/link premium-transition">
+                                <span>Source Code</span>
+                                <svg class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 premium-transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -73,10 +92,8 @@
         </div>
     </main>
 
-    <footer class="py-10 bg-white border-t mt-auto">
-        <div class="text-center">
-            <p class="text-gray-500 text-sm">© 2026 Badin | Built with Passion</p>
-        </div>
+    <footer class="py-6 bg-white border-t border-slate-100 flex-none text-center">
+        <p class="text-slate-400 text-[11px] font-medium tracking-wide">© 2026 BADIN RUNGRUEANGKITKUL | COMPUTER ENGINEERING</p>
     </footer>
 
 </body>

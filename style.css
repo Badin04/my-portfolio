@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kanit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@300;400;500;600&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -6,30 +6,34 @@ html {
 
 body {
     font-family: 'Inter', 'Kanit', sans-serif;
+    overflow-x: hidden;
 }
 
-/* Custom Animation สำหรับหน้า Projects และ Contact */
-.project-card, a.bg-white {
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+/* อนิมิชันแบบนุ่มนวลสไตล์พรีเมียม */
+.premium-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+/* ลูกเล่นเส้นตารางจางๆ เบื้องหลัง (Tech Grid Background) */
+.tech-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
 
-/* ตกแต่ง Scrollbar ให้ดูทันสมัย */
+/* ตกแต่ง Scrollbar ให้เข้ากับธีมใหม่ */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #cbd5e1;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 2px solid #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb:hover {

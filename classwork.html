@@ -7,224 +7,222 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<body class="bg-[#f8fafc] text-slate-800 font-sans flex flex-col min-h-screen">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-blue-600 uppercase tracking-tighter">Badin R.</a>
-            <div class="space-x-6 text-sm md:text-base font-medium">
-                <a href="index.html" class="hover:text-blue-500 transition">About</a>
-                <a href="projects.html" class="hover:text-blue-500 transition">Projects</a>
-                <a href="activities.html" class="text-blue-600">Activities</a>
-                <a href="contact.html" class="hover:text-blue-500 transition">Contact</a>
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-black text-slate-900 tracking-tighter uppercase">Badin <span class="text-blue-600">.R</span></a>
+            <div class="space-x-1 md:space-x-2 text-sm font-semibold">
+                <a href="index.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full transition">About</a>
+                <a href="projects.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full transition">Projects</a>
+                <a href="activities.html" class="bg-blue-50 text-blue-600 px-3 py-2 rounded-full transition">Activities</a>
+                <a href="contact.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-full transition">Contact</a>
             </div>
         </div>
     </nav>
 
     <main class="py-16 flex-grow">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-4xl mx-auto px-6">
             <div class="mb-12">
-                <a href="activities.html" class="text-blue-600 text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                <a href="activities.html" class="text-blue-600 text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all group w-fit">
                     <span>←</span> Back to Activities
                 </a>
-                <h2 class="text-4xl font-extrabold mt-6 tracking-tight text-gray-900">Academic & Class Projects</h2>
-                <p class="text-gray-500 mt-3 text-lg">รวบรวมผลงานวิจัยและการออกแบบระบบในรายวิชาต่างๆ</p>
-                <div class="h-1 w-24 bg-blue-600 mt-4 rounded-full"></div>
+                <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mt-6">Academic & Class Projects</h2>
+                <p class="text-slate-500 mt-2 text-base md:text-lg">รวบรวมผลงานวิจัยและการออกแบบระบบในรายวิชาต่างๆ</p>
+                <div class="h-1.5 w-24 bg-blue-600 mt-4 rounded-full"></div>
             </div>
 
-            <div class="space-y-12">
+            <div class="space-y-8 md:space-y-12">
                 
-                <section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-shadow duration-300">
-                    <div class="md:w-2/5 bg-gray-100 overflow-hidden">
-                        <img src="images/sisco1.png" alt="Network Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <section class="group bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl hover:border-blue-500/20 transition-all duration-300">
+                    <div class="md:w-2/5 bg-slate-50 overflow-hidden border-b md:border-b-0 md:border-r border-slate-100">
+                        <img src="images/sisco1.png" alt="Network Lab" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 min-h-[220px]">
                     </div>
-                    <div class="p-8 md:w-3/5">
-                        <span class="bg-blue-50 text-blue-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest">Network Engineering</span>
-                        <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition">Network Topology & OSPF Study</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">
-                            ออกแบบโครงสร้างเครือข่ายจำลองผ่าน Cisco Packet Tracer เพื่อศึกษาพฤติกรรมของ Link State Routing และการประยุกต์ใช้ Dijkstra’s algorithm ในการหาเส้นทางข้อมูล
-                        </p>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Network Engineering</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-3 text-slate-900 group-hover:text-blue-600 transition">Network Topology & OSPF Study</h3>
+                            <p class="text-slate-500 leading-relaxed text-sm">
+                                ออกแบบโครงสร้างเครือข่ายจำลองผ่าน Cisco Packet Tracer เพื่อศึกษาพฤติกรรมของ Link State Routing และการประยุกต์ใช้ Dijkstra’s algorithm ในการหาเส้นทางข้อมูล
+                            </p>
+                        </div>
                         <div class="flex flex-wrap gap-2 mt-6">
-                            <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase">Packet Tracer</span>
-                            <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase">OSPF</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">Packet Tracer</span>
+                            <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">OSPF</span>
                         </div>
                     </div>
                 </section>
 
-<section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-all duration-300">
-    <div class="md:w-2/5 bg-blue-50 overflow-hidden flex items-center justify-center">
-        <img src="images/bmi2.png" alt="BMI Calculator Web Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-    </div>
-    
-    <div class="p-8 md:w-3/5 flex flex-col justify-between">
-        <div>
-            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
-            <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition">BMI Calculator</h3>
-            
-            <p class="text-gray-600 leading-relaxed text-sm mb-4">
-                เว็บแอปพลิเคชันคำนวณและประเมินดัชนีมวลกาย ออกแบบในสไตล์ <strong class="text-gray-800 font-semibold">Clean Wellness UI</strong> 
-                โดยยกระดับ UX ด้วย <strong class="text-gray-800 font-semibold">Tab Navigation System</strong> 
-                แบ่งหน้าทำงานระหว่างฟอร์มคำนวณและหน้าประวัติการบันทึกข้อมูลอย่างเป็นสัดส่วน มีระบบ <strong class="text-gray-800 font-semibold">Visual Gauge</strong> 
-                แถบสีจำแนกเกณฑ์สุขภาพ และระบบ <strong class="text-gray-800 font-semibold">Advanced Filtering</strong> 
-                กรองค้นหาประวัติตามวันที่ได้อย่างแม่นยำด้วยการควบคุม DOM และ LocalStorage ผ่าน Vanilla JavaScript
-            </p>
-            
-            <div class="flex flex-wrap gap-2 mb-6">
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">HTML5</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">CSS3 (Custom Wellness)</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">JavaScript (ES6+)</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">Local Storage</span>
-            </div>
-        </div>
-        
-        <div class="pt-4 border-t border-gray-50 flex gap-4">
-            <a href="https://badin04.github.io/BMI/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
-                Live Demo
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            <a href="https://github.com/Badin04/BMI" target="_blank" class="border border-gray-200 text-gray-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-gray-50 transition">
-                Source Code
-            </a>
-        </div>
-    </div>
-</section>
+                <section class="group bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl hover:border-blue-500/20 transition-all duration-300">
+                    <div class="md:w-2/5 bg-slate-50 overflow-hidden border-b md:border-b-0 md:border-r border-slate-100">
+                        <img src="images/bmi2.png" alt="BMI Calculator Web Application" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 min-h-[220px]">
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-3 text-slate-900 group-hover:text-blue-600 transition">BMI Calculator</h3>
+                            <p class="text-slate-500 leading-relaxed text-sm mb-4">
+                                เว็บแอปพลิเคชันคำนวณและประเมินดัชนีมวลกาย ออกแบบในสไตล์ <strong class="text-slate-700 font-semibold">Clean Wellness UI</strong> 
+                                โดยยกระดับ UX ด้วย <strong class="text-slate-700 font-semibold">Tab Navigation System</strong> 
+                                แบ่งหน้าทำงานระหว่างฟอร์มคำนวณและหน้าประวัติการบันทึกข้อมูลอย่างเป็นสัดส่วน มีระบบ <strong class="text-slate-700 font-semibold">Visual Gauge</strong> 
+                                แถบสีจำแนกเกณฑ์สุขภาพ และระบบ <strong class="text-slate-700 font-semibold">Advanced Filtering</strong> 
+                                กรองค้นหาประวัติตามวันที่ได้อย่างแม่นยำด้วยการควบคุม DOM และ LocalStorage ผ่าน Vanilla JavaScript
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">HTML5</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">CSS3 (Custom Wellness)</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">JavaScript (ES6+)</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">Local Storage</span>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://badin04.github.io/BMI/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
+                                    Live Demo
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                                <a href="https://github.com/Badin04/BMI" target="_blank" class="border border-slate-200 text-slate-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-slate-50 transition">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                                <section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-all duration-300">
-    <div class="md:w-2/5 bg-blue-50 overflow-hidden flex items-center justify-center">
-        <img src="images/Random2.png" alt="Random Quote Generator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-    </div>
-    
-    <div class="p-8 md:w-3/5 flex flex-col justify-between">
-        <div>
-            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
-            <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition">Random Quote Generator</h3>
-            
-            <p class="text-gray-600 leading-relaxed text-sm mb-4">
-                เว็บแอปพลิเคชันสำหรับสุ่มคำคมสร้างแรงบันดาลใจในทุกๆ เช้า พัฒนาในรูปแบบ <strong class="text-gray-800 font-semibold">Single Page Application (SPA)</strong> ด้วย Vanilla JavaScript โดยแบ่งการทำงานออกเป็น 3 หน้าต่างอย่างเป็นสัดส่วน (สุ่มคำคม, เพิ่มคำคมใหม่, และคลังคำคม) พร้อมระบบค้นหาข้อมูล และสไตล์การออกแบบที่เน้นความมินิมอล สบายตา ควบคุมข้อมูลทั้งหมดแบบ Real-time ผ่าน <strong class="text-gray-800 font-semibold">LocalStorage</strong>
-            </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">HTML5</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">CSS3 (Custom Design)</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">Vanilla JavaScript</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">Google Fonts</span>
-            </div>
-        </div>
-        
-        <div class="pt-4 border-t border-gray-50 flex gap-4">
-            <a href="https://badin04.github.io/Random/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
-                Live Demo
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            <a href="https://github.com/Badin04/Random" target="_blank" class="border border-gray-200 text-gray-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-gray-50 transition">
-                Source Code
-            </a>
-        </div>
-    </div>
-</section>
+                <section class="group bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl hover:border-blue-500/20 transition-all duration-300">
+                    <div class="md:w-2/5 bg-slate-50 overflow-hidden border-b md:border-b-0 md:border-r border-slate-100">
+                        <img src="images/Random2.png" alt="Random Quote Generator" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 min-h-[220px]">
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-3 text-slate-900 group-hover:text-blue-600 transition">Random Quote Generator</h3>
+                            <p class="text-slate-500 leading-relaxed text-sm mb-4">
+                                เว็บแอปพลิเคชันสำหรับสุ่มคำคมสร้างแรงบันดาลใจในทุกๆ เช้า พัฒนาในรูปแบบ <strong class="text-slate-700 font-semibold">Single Page Application (SPA)</strong> ด้วย Vanilla JavaScript โดยแบ่งการทำงานออกเป็น 3 หน้าต่างอย่างเป็นสัดส่วน (สุ่มคำคม, เพิ่มคำคมใหม่, และคลังคำคม) พร้อมระบบค้นหาข้อมูล และสไตล์การออกแบบที่เน้นความมินิมอล สบายตา ควบคุมข้อมูลทั้งหมดแบบ Real-time ผ่าน <strong class="text-slate-700 font-semibold">LocalStorage</strong>
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">HTML5</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">CSS3 (Custom Design)</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">Vanilla JavaScript</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">LocalStorage</span>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://badin04.github.io/Random/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
+                                    Live Demo
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                                <a href="https://github.com/Badin04/Random" target="_blank" class="border border-slate-200 text-slate-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-slate-50 transition">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-all duration-300">
-    <div class="md:w-2/5 bg-blue-50 overflow-hidden flex items-center justify-center">
-        <img src="images/read2.png" alt="Reading Tracker Web Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-    </div>
-    
-    <div class="p-8 md:w-3/5 flex flex-col justify-between">
-        <div>
-            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
-            <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition">Reading Tracker</h3>
-            <p class="text-gray-600 leading-relaxed text-sm mb-4">
-                เว็บแอปพลิเคชันสำหรับนักอ่านที่ช่วยบันทึก ติดตาม และคัดกรองรายชื่อหนังสืออย่างเป็นระบบ ออกแบบ UI ในโทนสี <strong class="text-gray-800 font-semibold">Cozy Earth Tone</strong> ที่ดูสบายตา มาพร้อมระบบ <strong class="text-gray-800 font-semibold">Dashboard Counters</strong> สรุปสถิติจำนวนหนังสือแยกตามสถานะแบบ Real-time และฟีเจอร์การค้นหา/คัดกรองที่ยืดหยุ่น พัฒนาด้วยพลังของ Vanilla JavaScript ที่จัดการ State ได้อย่างปลอดภัย ไร้รอยต่อ และจัดเก็บข้อมูลอย่างถาวรผ่าน <strong class="text-gray-800 font-semibold">LocalStorage</strong>
-            </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">HTML5</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">CSS3 (Cozy Theme)</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">Vanilla JavaScript</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">Google Fonts</span>
-            </div>
-        </div>
-        
-        <div class="pt-4 border-t border-gray-50 flex gap-4">
-            <a href="https://badin04.github.io/Reading/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
-                Live Demo
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            <a href="https://github.com/Badin04/Reading" target="_blank" class="border border-gray-200 text-gray-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-gray-50 transition">
-                Source Code
-            </a>
-        </div>
-    </div>
-</section>
+                <section class="group bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl hover:border-blue-500/20 transition-all duration-300">
+                    <div class="md:w-2/5 bg-slate-50 overflow-hidden border-b md:border-b-0 md:border-r border-slate-100">
+                        <img src="images/read2.png" alt="Reading Tracker Web Application" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 min-h-[220px]">
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-3 text-slate-900 group-hover:text-blue-600 transition">Reading Tracker</h3>
+                            <p class="text-slate-500 leading-relaxed text-sm mb-4">
+                                เว็บแอปพลิเคชันสำหรับนักอ่านที่ช่วยบันทึก ติดตาม และคัดกรองรายชื่อหนังสืออย่างเป็นระบบ ออกแบบ UI ในโทนสี <strong class="text-slate-700 font-semibold">Cozy Earth Tone</strong> ที่ดูสบายตา มาพร้อมระบบ <strong class="text-slate-700 font-semibold">Dashboard Counters</strong> สรุปสถิติจำนวนหนังสือแยกตามสถานะแบบ Real-time และฟีเจอร์การค้นหา/คัดกรองที่ยืดหยุ่น พัฒนาด้วยพลังของ Vanilla JavaScript ที่จัดการ State ได้อย่างปลอดภัย ไร้รอยต่อ และจัดเก็บข้อมูลอย่างถาวรผ่าน <strong class="text-slate-700 font-semibold">LocalStorage</strong>
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">HTML5</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">CSS3 (Cozy Theme)</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">Vanilla JavaScript</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">LocalStorage</span>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://badin04.github.io/Reading/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
+                                    Live Demo
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                                <a href="https://github.com/Badin04/Reading" target="_blank" class="border border-slate-200 text-slate-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-slate-50 transition">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-<section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-all duration-300">
-    <div class="md:w-2/5 bg-blue-50 overflow-hidden flex items-center justify-center">
-        <img src="images/Workout2.png" alt="Workout Tracker Web Application" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-    </div>
-    
-    <div class="p-8 md:w-3/5 flex flex-col justify-between">
-        <div>
-            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
-            <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition">Workout Tracker</h3>
-            
-            <p class="text-gray-600 leading-relaxed text-sm mb-4">
-                เว็บแอปพลิเคชันสำหรับบันทึกและติดตามกิจกรรมการออกกำลังกายรายวัน ออกแบบมาในสไตล์ <strong class="text-gray-800 font-semibold">Sporty Clean UI</strong> ที่ใช้งานง่าย มาพร้อมระบบคำนวณสถิติเวลาสะสมและ <strong class="text-gray-800 font-semibold">Dynamic Chart</strong> แสดงสัดส่วนการฝึกซ้อมแยกตามประเภทกีฬาแบบเรียลไทม์ผ่าน <strong class="text-gray-800 font-semibold">Chart.js</strong> จัดการข้อมูลฝั่ง Client-side ได้อย่างแม่นยำและเก็บข้อมูลถาวรด้วย LocalStorage
-            </p>
-            
-            <div class="flex flex-wrap gap-2 mb-6">
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">HTML5</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">CSS3 (Sporty Custom)</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">JavaScript</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">Chart.js</span>
-            </div>
-        </div>
-        
-        <div class="pt-4 border-t border-gray-50 flex gap-4">
-            <a href="https://badin04.github.io/Workout/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
-                Live Demo
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            <a href="https://github.com/Badin04/Workout" target="_blank" class="border border-gray-200 text-gray-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-gray-50 transition">
-                Source Code
-            </a>
-        </div>
-    </div>
-</section>
+                <section class="group bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl hover:border-blue-500/20 transition-all duration-300">
+                    <div class="md:w-2/5 bg-slate-50 overflow-hidden border-b md:border-b-0 md:border-r border-slate-100">
+                        <img src="images/Workout2.png" alt="Workout Tracker Web Application" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 min-h-[220px]">
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-3 text-slate-900 group-hover:text-blue-600 transition">Workout Tracker</h3>
+                            <p class="text-slate-500 leading-relaxed text-sm mb-4">
+                                เว็บแอปพลิเคชันสำหรับบันทึกและติดตามกิจกรรมการออกกำลังกายรายวัน ออกแบบมาในสไตล์ <strong class="text-slate-700 font-semibold">Sporty Clean UI</strong> ที่ใช้งานง่าย มาพร้อมระบบคำนวณสถิติเวลาสะสมและ <strong class="text-slate-700 font-semibold">Dynamic Chart</strong> แสดงสัดส่วนการฝึกซ้อมแยกตามประเภทกีฬาแบบเรียลไทม์ผ่าน <strong class="text-slate-700 font-semibold">Chart.js</strong> จัดการข้อมูลฝั่ง Client-side ได้อย่างแม่นยำและเก็บข้อมูลถาวรด้วย LocalStorage
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">HTML5</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">CSS3 (Sporty Custom)</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">JavaScript</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">Chart.js</span>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://badin04.github.io/Workout/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
+                                    Live Demo
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                                <a href="https://github.com/Badin04/Workout" target="_blank" class="border border-slate-200 text-slate-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-slate-50 transition">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <section class="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl transition-all duration-300">
-    <div class="md:w-2/5 bg-blue-50 overflow-hidden flex items-center justify-center">
-        <img src="images/shop.png" alt="BMI Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-    </div>
-    <div class="p-8 md:w-3/5 flex flex-col justify-between">
-        <div>
-            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
-            <h3 class="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition">Clothing sales website</h3>
-            <p class="text-gray-600 leading-relaxed text-sm mb-4">
-                โปรแกรมขายเสื้อผ้าออนไลน์
-            </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">HTML5</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">Tailwind CSS</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">JavaScript</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-md text-[10px] font-bold text-gray-500 uppercase tracking-tighter">PHP</span>
-            </div>
-        </div>
-        
-        <div class="pt-4 border-t border-gray-50 flex gap-4">
-            <a href=" https://badin04.github.io/shop/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
-                Live Demo
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-            <a href="https://github.com/Badin04/shop" target="_blank" class="border border-gray-200 text-gray-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-gray-50 transition">
-                Source Code
-            </a>
-        </div>
-    </div>
-</section>
+                <section class="group bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden flex flex-col md:flex-row hover:shadow-xl hover:border-blue-500/20 transition-all duration-300">
+                    <div class="md:w-2/5 bg-slate-50 overflow-hidden border-b md:border-b-0 md:border-r border-slate-100">
+                        <img src="images/shop.png" alt="Clothing Sales Website" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500 min-h-[220px]">
+                    </div>
+                    <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                        <div>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Web Application</span>
+                            <h3 class="text-2xl font-bold mt-4 mb-3 text-slate-900 group-hover:text-blue-600 transition">Clothing Sales Website</h3>
+                            <p class="text-slate-500 leading-relaxed text-sm mb-4">
+                                โปรแกรมและแพลตฟอร์มสำหรับขายเสื้อผ้าออนไลน์แบบครบวงจร
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">HTML5</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">Tailwind CSS</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">JavaScript</span>
+                                <span class="bg-slate-100 px-3 py-1 rounded-md text-[10px] font-bold text-slate-500 uppercase tracking-wider">PHP</span>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 flex gap-4">
+                                <a href="https://badin04.github.io/shop/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-700 transition flex items-center gap-2">
+                                    Live Demo
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                                <a href="https://github.com/Badin04/shop" target="_blank" class="border border-slate-200 text-slate-600 px-5 py-2 rounded-xl text-sm font-bold hover:bg-slate-50 transition">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             </div>
         </div>
     </main>
 
-    <footer class="py-12 bg-white border-t mt-auto text-center">
-        <p class="text-gray-400 text-sm font-medium tracking-wide">© 2026 BADIN RUNGRUEANGKITKUL</p>
+    <footer class="py-12 bg-white border-t border-slate-100 mt-auto text-center">
+        <p class="text-slate-400 text-sm font-medium">© 2026 BADIN RUNGRUEANGKITKUL</p>
     </footer>
 
 </body>
