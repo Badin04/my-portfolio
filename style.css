@@ -9,19 +9,19 @@ body {
     overflow-x: hidden;
 }
 
-/* อนิมิชันแบบนุ่มนวลสไตล์พรีเมียม */
+/* อนิมิชัน*/
 .premium-transition {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ลูกเล่นเส้นตารางจางๆ เบื้องหลัง (Tech Grid Background) */
+/*เส้นตารางจางๆ เบื้องหลัง */
 .tech-grid {
     background-size: 40px 40px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
                       linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
 
-/* ตกแต่ง Scrollbar ให้เข้ากับธีมใหม่ */
+/*Scrollbar*/
 ::-webkit-scrollbar {
     width: 8px;
 }
