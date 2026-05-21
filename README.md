@@ -2,7 +2,7 @@
 
 เว็บไซต์ Portfolio ส่วนตัวที่รวบรวมประวัติ ผลงานการพัฒนาเว็บแอปพลิเคชัน กิจกรรม และทักษะความสามารถทางด้านเทคโนโลยี ออกแบบด้วยสไตล์พรีเมียม มินิมอล และรองรับการแสดงผลทุกหน้าจอ (Responsive Web Design)
 
-**Live Website:** [ https://badin04.github.io/my-portfolio]
+**Live Website:** https://badin04.github.io/my-portfolio
 
 ## Featured Projects (ผลงานเด่นในคลัง)
 
