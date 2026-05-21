@@ -4,8 +4,6 @@
 
 **Live Website:** [ https://badin04.github.io/my-portfolio]
 
----
-
 ## Featured Projects (ผลงานเด่นในคลัง)
 
 ภายในเว็บไซต์นี้จะเชื่อมโยงไปสู่ผลงานพัฒนาโปรเจกต์หลักๆ ได้แก่:
@@ -18,8 +16,6 @@
 2. **Thai Fruit Ninja Learning Game**
    * เกม 2D บนมือถือ (Unity + C#) สำหรับฝึกทักษะและทบทวนพยัญชนะไทยสำหรับเด็กนักเรียน
    * **Source Code:** [คลิกดูโค้ดที่นี่](https://github.com/Badin04/Thai-FruitNinja-Learning)
-
----
 
 ## Tech Stack & Tools
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+)
